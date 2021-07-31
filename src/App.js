@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Cards from './Components/Cards'
+import Crousels from './Components/Crousels.jsx'
+import Header from './Components/Header'
+import Homepage from './Components/Homepage.jsx'
+import "bootstrap/dist/css/bootstrap.min.css";
+import Aboutus from './Components/Aboutus'
+import Footer from './Components/Footer'
+import Missionandvision from './Components/Missionandvision'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Homepage />
+      <Crousels />
+      <Aboutus/>
+      <Cards />
+      <Missionandvision/>
+      <Footer/>
     </div>
   );
 }
 
-export default App;
+export default App
